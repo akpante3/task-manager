@@ -1,0 +1,82 @@
+@import './tailwind.scss';
+@import './base.scss';
+
+.app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+body {
+  background-color: #f9fafb;
+}
+
+.app-container {
+  @apply max-w-2xl w-full px-4 py-8 mx-auto;
+}
+
+.title {
+  @apply text-3xl font-bold text-center mb-6;
+}
+
+.error-message {
+  @apply mb-4 text-red-600 text-center;
+}
+
+.task-form-container {
+  @apply bg-white p-6 rounded-lg shadow-md;
+}
+
+.section-title {
+  @apply text-xl font-semibold mb-4;
+}
+
+.form-group {
+  @apply mb-4;
+}
+
+.form-label {
+  @apply block text-gray-700;
+}
+
+.form-input {
+  @apply w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500;
+}
+
+.submit-btn {
+  @apply w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600;
+}
+
+.task-list {
+  @apply mt-8 mx-auto w-full;
+}
+
+.no-tasks {
+  @apply text-center text-gray-600;
+}
+
+.task-item {
+  @apply bg-white p-4 mb-3 rounded-lg shadow-md flex justify-between items-center;
+}
+
+.task-title {
+  @apply font-semibold;
+}
+
+.task-desc {
+  @apply text-gray-600;
+}
+
+.complete-btn {
+  @apply bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    max-width: 500px;
+  }
+}
+
+
+
